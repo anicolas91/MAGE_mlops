@@ -1,0 +1,7 @@
+projects:
+  taxi_nyc_project:
+    path: taxi_nyc_project
+  unit_0_setup: {}
+  unit_1_data_preparation: {}
+  unit_2_training: {}
+  unit_3_observability: {}
