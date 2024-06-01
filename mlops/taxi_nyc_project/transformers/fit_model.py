@@ -17,7 +17,9 @@ def transform(df: pd.DataFrame, **kwargs) -> Tuple[DictVectorizer, BaseEstimator
     categorical = ['PULocationID', 'DOLocationID'] # pickup and dropoff location
     numerical = ['trip_distance'] # distance of trip
 
-    train_dicts = df[categorical + numerical].to_dict(orient='records')
+    # running without the numerical
+
+    train_dicts = df[categorical].to_dict(orient='records')
     X_train = dv.fit_transform(train_dicts)
 
     # fit a linear regression model
